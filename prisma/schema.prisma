@@ -1,0 +1,40 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Client {
+  id         String @id @default(uuid())
+  email      String 
+  password   String 
+  name       String
+  cpf        String    @unique
+  phone      Int
+  updated_at DateTime @default(now())
+  created_at DateTime @default(now())
+}
+
+model Tax {
+   id         String @id @default(uuid())
+   origin     String 
+   destiny    String 
+   value      Float   
+   updated_at DateTime @default(now())
+   created_at DateTime @default(now())
+}
+
+model Plan {
+  id         String @id @default(uuid())
+  name       String   
+  time       Int
+  updated_at DateTime @default(now())
+  created_at DateTime @default(now())
+}
+
+
+
+
