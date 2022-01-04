@@ -8,7 +8,7 @@ class ClientServices {
       });
       return user;
     } catch (error) {
-      const responseError = { deleted: false, message: 'Não foi possível criar o cliente'}
+      const responseError = { created: false, message: 'Não foi possível criar o cliente'}
       return responseError
     }
   }
@@ -22,7 +22,7 @@ class ClientServices {
     });
     return data;
     } catch (error) {
-      const responseError = { deleted: false, message: 'Não foi possível ler os dados'}
+      const responseError = { read: false, message: 'Não foi possível ler os dados'}
       return responseError
     }
   }
@@ -36,7 +36,7 @@ class ClientServices {
       });
       return data;
     } catch (error) {
-      const responseError = { deleted: false, message: 'Não foi possível ler os dados dos clientes'}
+      const responseError = { read: false, message: 'Não foi possível ler os dados dos clientes'}
       return responseError
     }
   }
@@ -51,7 +51,7 @@ class ClientServices {
       });
       return user;
     } catch (error) {
-      const responseError = { deleted: false, message: 'Não foi possível atualizar o cliente'}
+      const responseError = { updated: false, message: 'Não foi possível atualizar o cliente'}
       return responseError
     }
   }

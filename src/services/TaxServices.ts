@@ -39,7 +39,7 @@ class TaxServices {
       });
       return data;
     } catch (error) {
-      const responseError = { deleted: false, message: 'Não foi possível ler os dados das tarifas'}
+      const responseError = { read: false, message: 'Não foi possível ler os dados das tarifas'}
       return responseError
     }
   }
