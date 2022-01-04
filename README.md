@@ -11,11 +11,17 @@ http://ec2-18-228-116-55.sa-east-1.compute.amazonaws.com
 
 Instruções
 
-Yarn Install
-
 Criar e setar .env com as variavéis presentes no .env.example
 
-Yarn Dev
+yarn install
+
+yarn dev
+
+TDD ---
+
+yarn jest
+
+--------
 
 Cria usuário
 Post('/client')
