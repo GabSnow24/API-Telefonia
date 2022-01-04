@@ -3,7 +3,7 @@ API para cálculo de planos de telefonia.
 
 Documentação v1 da API - Swagger
 
-https://app.swaggerhub.com/apis/GabSnow24/API-Cinema/1.0.0#/
+https://app.swaggerhub.com/apis/GabSnow24/API-Telefonia/1.0.0#/
 
 Instância AWS EC2 
 
