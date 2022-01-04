@@ -39,7 +39,7 @@ class PlanServices {
       });
       return data;
     } catch (error) {
-      const responseError = { deleted: false, message: 'Não foi possível ler os dados dos planos'}
+      const responseError = { read: false, message: 'Não foi possível ler os dados dos planos'}
       return responseError
     }
   }
