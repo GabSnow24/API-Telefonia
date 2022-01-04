@@ -1,5 +1,5 @@
-# API-Cinema
-API para gestão de filmes em cinema.
+# API-Telefonia
+API para cálculo de planos de telefonia.
 
 Documentação v1 da API - Swagger
 
