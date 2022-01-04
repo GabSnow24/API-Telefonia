@@ -17,5 +17,4 @@ Post('/client')
 Loga com usuário
 Post('/login')
 
-Copia token retornado e utiliza como Authorization Bearer nas rotas onde é necessário autorização
 
