@@ -13,6 +13,7 @@ class MasterMiddleware{
                 return response.status(403).send({auth:false, message: 'Token não provido'})
         const token:any = request.headers.authorization.split(' ')[1];
         try {
+            console.log('samuel')
             const{ userID } = verifyToken(token);
             if(!userID)
                 return response.status(403).send({auth:false, message: 'Cliente não autorizado'})
